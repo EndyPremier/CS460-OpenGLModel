@@ -1,6 +1,6 @@
 # Rk-α (R. K. Alpha) Hierarchical Modelling
 
-**Term:** Senior Spring 2018  
+**Term:** Senior Fall 2018  
 **Course:** CS460 - Graphics  
 **Date:** October 2018  
 **Tool:** Visual Studio  
