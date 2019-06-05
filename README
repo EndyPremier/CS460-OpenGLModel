@@ -1,0 +1,87 @@
+Project 2 Artifact - Endy Iskandar Imam
+=======================================
+
+ARTIFACT FILES
+--------------
++ IMAGE: Rk_alpha_head.bmp
++ ANIMATION: Rk-Alpha-Animate.gif
+
+
+  The model of Rk.Alpha is built solely upon primitives and from the built prim-
+itive body, it has up to 10 levels of primitives with every part of the model
+are built on primitives:
+
++ ROOT
+  + Top Head
+    + Left Eye
+      + Left Scalera
+        + Left Iris
+          + Left Pupil
+      + Left Eyebrow
+    + Right Eye
+      + Right Scalera
+        + Right Iris
+          + Right Pupil
+      + Right Eyebrow
+    + Left Ear
+      + Left Inner Ear
+      + Left Ear Root
+        + Left Ear Bolt
+    + Right Ear
+      + Right Inner Ear
+      + Right Ear Root
+        + Right Ear Bolt
+  + Muzzle
+    + Back Tuft
+      + Left Tuft
+      + Right Tuft
+    + Nose
+      + Left Nostril
+      + Right Nostril
+    + Bottom Teeth
+      + Left Bottom Teeth
+        + Left Bottom Front Teeth
+          + Left Bottom Mid Teeth
+            + Left Bottom Back Teeth
+      + Right Bottom Teeth
+        + Right Bottom Front Teeth
+          + Right Bottom Mid Teeth
+            + Right Bottom Back Teeth
+    + Bottom Jaw Support
+      + Left Jaw Support
+        + Left Jaw Support Base
+          + Left Jaw Support Bolt
+      + Right Jaw Support
+        + Right Jaw Support Base
+          + Right Jaw Support Bolt
+    + Bottom Jaw
+      + Jaw Circular Root
+        + Jaw Teeth 
+          + Bottom Teeth
+            + Left Bottom Teeth
+              + Left Bottom Front Teeth
+                + Left Bottom Mid Teeth
+                + Left Bottom Back Teeth
+            + Right Bottom Teeth
+              + Right Bottom Front Teeth
+                + Right Bottom Mid Teeth
+                  + Right Bottom Back Teeth
+
+  Each of the indents represents glPushMatrix() with some use of glTranslate(),
+glRotate(), and glScale() for almost every cases.
+
+  Sliders are used for almost every components like eyes, teeth, jaw, nose, and
+ears and for the eyes in particular, that slider not only control the eye move-
+ment but even the iris and pupil on the scalera of the eye.
+
+  Cameras are somethign I haven't utilize since I cannot bother with the lack of 
+tangible information such as the eye and the position to do transformation
+sadly.
+
+  Animation, I modified the modelerapp to add a getter procedure to see if ani-
+mation is on and allow Rk to animate with expression and sway.
+
+  For Beacons, note that the ears and the eyes - the scalera, the iris and the
+pupil - makes extensive use of the triangles to form a semicircle and a prism
+(2), and for the eyes in particular, the fidelity is associated to its graphics 
+settings too (1).
